@@ -34,8 +34,36 @@ header {
 
 .navbar-nav .nav-link {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 19px;
     color: azure;
+    position: relative;
+	z-index:1;
+}
+
+.navbar-nav .nav-link:before {
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: -1;
+    background: #9fdccc;
+    opacity: 0;
+    height: 5px;
+    bottom: calc(20px - 10px);
+    width: calc(100% + (5px / 1.5));
+    right: calc(5px / -3);
+    transition: 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    transform: rotate(45deg);
+    transform-origin: left;
+}
+
+.navbar-nav .nav-link:hover:before {
+    bottom: 9px;
+    opacity: 1;
+    transform: rotate(0);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #9fdccc;
 }
 
 /* Nosotros */
@@ -84,21 +112,26 @@ footer .nav {
     padding: 2rem;
     border-radius: 10px;
     margin: auto;
-    background-color: #ccc;
-    font-size: 14px;
+    background: linear-gradient(rgba(5, 7, 12, 0.40), rgba(5, 7, 12, 0.40)), url(./images/consulta-fondo.jpeg);
+    background-size: cover;
 }
+
 
 .formulario h3 {
     text-align: center;
     text-decoration: underline;
     padding-bottom: 1rem;
+    font-weight: 700;
+    color: #f6f6f6;
 }
 
 .formulario label {
     width: 5rem;
-    font-weight: bold;
     display: inline-block;
     text-decoration: underline;
+    font-weight: 700;
+    font-size: 17px;
+    color: #f6f6f6;
 }
 
 .formulario input[type="text"],
@@ -143,9 +176,6 @@ footer .nav {
   grid-row: 1;  
   line-height: 3em;
   background: rgba(76, 167, 219, 0.815);
-  /* box-shadow: 0 8px 32px 0 rgba(213, 214, 220, 0.37); */
-  /* backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px); */
   border-radius: 10px;
   border: 6px solid rgba(30, 28, 28, 0.18); 
   color: #2b2b2b;

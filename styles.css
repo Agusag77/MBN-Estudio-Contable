@@ -94,6 +94,47 @@ footer .nav {
     padding-right: 5rem;
 }
 
+/* Novedades */
+
+.informe-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.informe-1 embed {
+    border-radius: 3px;
+}
+
+.informe-1 h2 {
+    color: azure;
+    font-weight: 700;
+    text-decoration: underline;
+    align-items: center;
+    margin-bottom: 2rem;
+    /* backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.289); */
+}
+
+.informe-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.informe-2 embed {
+    border-radius: 3px;
+}
+
+.informe-2 h2 {
+    color: azure;
+    font-weight: 700;
+    text-decoration: underline;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
 
 /* Contacto */
 

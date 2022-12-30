@@ -124,7 +124,9 @@ footer .nav {
     align-items: center; 
 }
 
-.informe-2 embed {
+.informe-2 iframe {
+    width: 60%;
+    height: 600px;
     border-radius: 3px;
 }
 
@@ -270,6 +272,10 @@ footer .nav {
 @media screen and (max-width: 800px) {
     #nosotros div img {
         margin-bottom: 2rem;
+    }
+    .informe-2 iframe {
+        width: 90%;
+        height: 400px;
     }
 
 }

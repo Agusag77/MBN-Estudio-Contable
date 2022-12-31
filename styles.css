@@ -77,9 +77,18 @@ header {
     border-radius: 150px;
 }
 
+.card .card-body {
+    background-image: linear-gradient(to left, rgba(200, 200, 171, 0.833) 0%, rgba(241, 241, 220, 0.907) 60%);
+}
+
+.card .card-title {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
 .card .card-text {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 footer {
@@ -104,7 +113,9 @@ footer .nav {
     margin-bottom: 5rem;
 }
 
-.informe-1 embed {
+.informe-1 iframe {
+    width: 60%;
+    height: 600px;
     border-radius: 3px;
 }
 
@@ -114,8 +125,6 @@ footer .nav {
     text-decoration: underline;
     align-items: center;
     margin-bottom: 2rem;
-    /* backdrop-filter: blur(3px);
-    background-color: rgba(0, 0, 0, 0.289); */
 }
 
 .informe-2 {
@@ -272,6 +281,10 @@ footer .nav {
 @media screen and (max-width: 800px) {
     #nosotros div img {
         margin-bottom: 2rem;
+    }
+    .informe-1 iframe {
+        width: 90%;
+        height: 400px;
     }
     .informe-2 iframe {
         width: 90%;
